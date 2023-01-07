@@ -1,6 +1,6 @@
 import { useContext } from "react";
 
-import snsContext from "./snsContext";
+import snsContext from "./snsContext.js";
 
 const useSns = () => {
   const sns = useContext(snsContext);

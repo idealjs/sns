@@ -1,6 +1,6 @@
 import EventEmitter from "events";
 
-import { SlotId } from "./type";
+import type { SlotId } from "./type.js";
 
 class Slot extends EventEmitter {
   public id: SlotId;

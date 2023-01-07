@@ -1,3 +1,3 @@
-export { default as Slot } from "./src/Slot";
-export { default as Sns } from "./src/Sns";
-export * from "./src/type";
+export { default as Slot } from "./src/Slot.js";
+export { default as Sns } from "./src/Sns.js";
+export * from "./src/type.js";

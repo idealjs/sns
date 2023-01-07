@@ -1,5 +1,5 @@
-import Slot from "./Slot";
-import { SlotId } from "./type";
+import Slot from "./Slot.js";
+import type { SlotId } from "./type.js";
 
 class Sns {
   private slots: { [slotId: SlotId]: Slot | undefined } = {};

@@ -1,5 +1,5 @@
-export { default as snsContext } from "./src/snsContext";
-export * from "./src/snsContext";
-export { default as useSlot } from "./src/useSlot";
-export { default as useSns } from "./src/useSns";
+export { default as snsContext } from "./src/snsContext.js";
+export * from "./src/snsContext.js";
+export { default as useSlot } from "./src/useSlot.js";
+export { default as useSns } from "./src/useSns.js";
 export * from "@idealjs/sns-core";
