@@ -2,8 +2,8 @@ import { act, renderHook } from "@testing-library/react";
 import { nanoid } from "nanoid";
 import { FC, StrictMode, useCallback, useState } from "react";
 
-import useSlot from "../src/useSlot";
-import useSns from "../src/useSns";
+import useSlot from "../src/useSlot.js";
+import useSns from "../src/useSns.js";
 
 describe("useSlot useSlot StrictMode", () => {
   test("should has one slot", () => {
