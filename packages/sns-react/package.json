@@ -20,7 +20,7 @@
     "test": "vitest",
     "build": "rollup --config rollup.config.js --bundleConfigAsCjs",
     "typings": "tsc -v && tsc --emitDeclarationOnly --paths null",
-    "prepack": "rm -rf dist & yarn typings & yarn build",
+    "prepack": "rm -rf dist && yarn typings && yarn build",
     "prepublish": "yarn test run"
   },
   "dependencies": {
