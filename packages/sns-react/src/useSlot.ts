@@ -23,5 +23,3 @@ const useSlot = (slotId: SlotId): Slot | null => {
 };
 
 export default useSlot;
-
-export const sns = 0;
