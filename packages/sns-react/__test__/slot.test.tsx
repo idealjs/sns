@@ -1,6 +1,7 @@
 import { act, renderHook } from "@testing-library/react";
 import { nanoid } from "nanoid";
 import { FC, StrictMode, useCallback, useState } from "react";
+import { describe, expect, test } from "vitest";
 
 import useSlot from "../src/useSlot";
 import useSns from "../src/useSns";
