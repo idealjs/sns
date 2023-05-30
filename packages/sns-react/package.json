@@ -2,6 +2,10 @@
   "name": "@idealjs/sns-react",
   "version": "2.2.0",
   "type": "module",
+  "files": [
+    "dist",
+    "src"
+  ],
   "main": "dist/esm/index.js",
   "types": "dist/index.d.ts",
   "exports": {
