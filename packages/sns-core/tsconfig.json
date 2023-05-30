@@ -4,6 +4,6 @@
     "noEmit": true,
     "outDir": "./dist"
   },
-  "include": ["src", "index.ts", "__test__"],
+  "include": ["src", "src/index.ts", "__test__"],
   "exclude": ["node_modules"]
 }

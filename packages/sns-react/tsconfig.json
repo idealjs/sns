@@ -3,8 +3,13 @@
   "compilerOptions": {
     "noEmit": true,
     "outDir": "./dist",
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+    "paths": {
+      "@idealjs/sns-core": ["../sns-core/src/index.ts"]
+    }
   },
-  "include": ["src", "index.ts", "__test__"],
+
+  "include": ["src", "src/index.ts", "__test__"],
   "exclude": ["node_modules"]
 }

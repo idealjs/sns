@@ -11,7 +11,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      "@idealjs/sns-core": path.resolve(__dirname, "../sns-core/index.ts"),
+      "@idealjs/sns-core": path.resolve(__dirname, "../sns-core/src/index.ts"),
     },
   },
 });
