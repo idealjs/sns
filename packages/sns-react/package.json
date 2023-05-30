@@ -15,13 +15,12 @@
   "scripts": {
     "test": "vitest",
     "build": "rollup --config rollup.config.js --bundleConfigAsCjs",
-    "postbuild": "yarn typings",
     "typings": "tsc -v && tsc --emitDeclarationOnly --paths null",
-    "prepublishOnly": "rm -rf dist&yarn build",
-    "postpublish": "rm -rf dist"
+    "prepack": "rm -rf dist & yarn typings & yarn build",
+    "prepublish": "yarn test run"
   },
   "dependencies": {
-    "@idealjs/sns-core": "^2.1.2"
+    "@idealjs/sns-core": "workspace:*"
   },
   "peerDependencies": {
     "react": "^18.0.0",

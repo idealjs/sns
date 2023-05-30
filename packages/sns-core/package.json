@@ -15,10 +15,8 @@
   "scripts": {
     "test": "vitest",
     "build": "rollup --config rollup.config.js --bundleConfigAsCjs",
-    "postbuild": "yarn typings",
-    "typings": "tsc -v && tsc --emitDeclarationOnly",
-    "prepublishOnly": "rm -rf dist&yarn build",
-    "postpublish": "rm -rf dist"
+    "typings": "tsc -v && tsc --emitDeclarationOnly --paths null",
+    "prepack": "rm -rf dist & yarn typings & yarn build"
   },
   "dependencies": {
     "events": "^3.3.0"
