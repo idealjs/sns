@@ -9,7 +9,10 @@ const useSlot = (slotId: SlotId): Slot | null => {
   const [slot, setSlot] = useState<Slot | null>(null);
 
   useEffect(() => {
-    setSlot(sns.setSlot(slotId));
+    let slot = new Slot(slotId);
+    setSlot(slot);
+    sns.setSlot(new Slot(slotId));
+
     return () => {
       setSlot(null);
       sns.removeSlot(slotId);

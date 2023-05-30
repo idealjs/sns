@@ -4,12 +4,8 @@ import { SlotId } from "./type";
 class Sns {
   private slots: { [slotId: SlotId]: Slot | undefined } = {};
 
-  public setSlot(slotId: SlotId): Slot {
-    let slot = this.slots[slotId];
-    if (!slot) {
-      slot = new Slot(slotId);
-      this.slots[slotId] = slot;
-    }
+  public setSlot(slot: Slot): Slot {
+    this.slots[slot.id] = slot;
     return slot;
   }
 
